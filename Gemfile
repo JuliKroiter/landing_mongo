@@ -33,6 +33,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Image upload
+gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
+gem 'mini_magick'
+gem 'mongoid-grid_fs'
+
 gem 'haml'
 
 group :development, :test do
