@@ -1,0 +1,11 @@
+%section#about.bg-primary
+  .container
+    .row
+      .col-lg-8.mx-auto.text-center
+        %h2.section-heading.text-white{style: "#{@about.title_style}"}
+          = @about.title
+        %hr.light/
+        %p.text-faded{style: "#{@about.desc_style}"}
+          = @about.desc
+        %a.btn.btn-default.btn-xl.js-scroll-trigger{:href => "#services", style: "#{@about.btn_style}"}
+          = @about.button

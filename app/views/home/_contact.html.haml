@@ -1,0 +1,15 @@
+%section#contact
+  .container
+    .row
+      .col-lg-8.mx-auto.text-center
+        %h2.section-heading{style: "#{@contact.title_style}"}
+          = @contact.title
+        %hr.primary/
+        %p{style: "#{@contact.desc_style}"}
+          = @contact.desc
+    .row
+      - @contact.blocks.each do |block|
+        .col-lg-4.ml-auto.text-center
+          %i.fa.fa-3x.sr-contact{class: "fa-#{block.icon}"}
+          %p{style: "#{block.title_style}"}
+            = block.title

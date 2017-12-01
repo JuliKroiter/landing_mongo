@@ -1,0 +1,13 @@
+%section#portfolio.p-0
+  .container-fluid
+    .row.no-gutter.popup-gallery
+      - @portfolio.blocks.each do |child|
+        .col-lg-4.col-sm-6
+          = link_to '#', class: 'portfolio-box' do
+            = image_tag(child.img_url)
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded{style: "#{child.title_style}"}
+                  = child.title
+                .project-name{style: "#{child.desc_style}"}
+                  = child.desc

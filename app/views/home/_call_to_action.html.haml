@@ -1,0 +1,6 @@
+.call-to-action.bg-dark
+  .container.text-center
+    %h2{style: "#{@call_to_action.title_style}"}
+      = @call_to_action.title
+    %a.btn.btn-default.btn-xl.sr-button{:href => "#", style: "#{@call_to_action.btn_style}"}
+      = @call_to_action.button

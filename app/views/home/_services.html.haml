@@ -1,0 +1,17 @@
+%section#services
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading{style: "#{@services.title_style}"}
+          = @services.title
+        %hr.primary/
+  .container
+    .row
+      - @services.blocks.each do |child|
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            = fa_icon(child.icon, class: 'fa-4x text-primary sr-icons')
+            %h3{style: "#{child.title_style}"}
+              = child.title
+            %p.text-muted{style: "#{child.desc_style}"}
+              = child.desc
