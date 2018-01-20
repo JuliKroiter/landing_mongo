@@ -21,11 +21,19 @@
         #navbarResponsive.collapse.navbar-collapse
           %ul.navbar-nav.ml-auto
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#about"} About
+              = link_to 'О нас', "#about", class: 'js-scroll-trigger nav-link'
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#services"} Services
+              = link_to 'Услуги', "#services", class: 'js-scroll-trigger nav-link'
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Portfolio
+              = link_to 'Портфолио', "#portfolio", class: 'js-scroll-trigger nav-link'
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
+              = link_to 'Контакты', "#contact", class: 'js-scroll-trigger nav-link'
+            -  if user_signed_in?
+              %li.nav-item
+                = link_to 'Выйти', destroy_user_session_path, method: :delete, class: "nav-link"
+            - else
+              %li.nav-item
+                = link_to 'Войти', new_user_session_path, class: "nav-link"
+              %li.nav-item
+                = link_to 'Регистрация', new_user_registration_path, class: "nav-link"
     = yield

@@ -48,6 +48,7 @@ gem 'popper_js'
 gem "font-awesome-rails"
 gem 'magnific-popup-rails'
 gem 'jquery-easing-rails'
+gem 'bootstrap_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
