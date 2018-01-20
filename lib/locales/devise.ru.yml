@@ -58,14 +58,14 @@ ru:
       confirmation_instruction: "Не получили подтверждения?"
       unlock_instruction: "Не получили инструкции по разблокировке?"
     resend:
-      confirmation_instruction: 'Resend confirmation instructions'
-      unlock_instruction: 'Resend unlock instructions'
+      confirmation_instruction: 'Подтвердите инструкции по подтверждению'
+      unlock_instruction: 'Повторно отправить инструкции по разблокировке'
     sing_in_with: "Войти в систему с %{omni_auth}"
     password:
-      send_instruction: 'Send me reset password instructions'
-      new: 'New password'
-      confirm_new: 'Confirm new password'
-      change: 'Change your password'
+      send_instruction: 'Отправить инструкции по сбросу пароля'
+      new: 'Новый пароль'
+      confirm_new: 'Подтвердите новый пароль'
+      change: 'Изменить свой пароль'
   errors:
     messages:
       already_confirmed: "уже подтверждена. Пожалуйста, попробуйте войти в систему"
