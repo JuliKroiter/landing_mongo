@@ -85,6 +85,8 @@ GEM
     erubi (1.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    figaro (1.1.1)
+      thor (~> 0.14)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
     globalid (0.4.1)
@@ -240,6 +242,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   debase
   devise
+  figaro
   font-awesome-rails
   haml
   jbuilder (~> 2.5)
