@@ -21,3 +21,4 @@
 .ruby-gemset
 .ruby-version
 .DS_Store
+config/secrets.yml
