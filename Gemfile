@@ -38,6 +38,10 @@ gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 gem 'mini_magick'
 gem 'mongoid-grid_fs'
 
+# Authentication
+gem 'devise'
+
+# View
 gem 'haml'
 gem 'jquery-rails'
 gem 'popper_js'
