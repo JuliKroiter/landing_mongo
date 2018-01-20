@@ -27,7 +27,7 @@ module LandingMongo
 
     config.generators { |g|
       g.template_engine :haml
-      # g.model_engine    :mongoid
+      g.orm :mongoid
     }
   end
 end
