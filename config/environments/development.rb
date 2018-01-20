@@ -36,8 +36,8 @@ Rails.application.configure do
     address: "smtp.gmail.com",
     port: 587,
     domain: 'localhost:3000',
-    user_name: Rails.application.secrets.gmail_email,
-    password: Rails.application.secrets.gmail_pass,
+    user_name: Figaro.env.gmail_email,
+    password: Figaro.env.gmail_pass,
     authentication: :plain,
     enable_starttls_auto: true
   }
