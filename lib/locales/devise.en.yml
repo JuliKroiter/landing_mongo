@@ -52,6 +52,22 @@ en:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+    log_in: 'Log In'
+    sign_up: 'Sing Up'
+    edit_profile: 'Edit profile'
+    forgot_password: 'Forgot your password?'
+    didnt_receive:
+      confirmation_instruction: "Didn't receive confirmation instructions?"
+      unlock_instruction: "Didn't receive unlock instructions?"
+    resend:
+      confirmation_instruction: 'Resend confirmation instructions'
+      unlock_instruction: 'Resend unlock instructions'
+    sing_in_with: "Sign in with %{omni_auth}"
+    password:
+      send_instruction: 'Send me reset password instructions'
+      new: 'New password'
+      confirm_new: 'Confirm new password'
+      change: 'Change your password'
   errors:
     messages:
       already_confirmed: "was already confirmed, please try signing in"
