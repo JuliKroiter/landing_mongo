@@ -3,8 +3,9 @@ class GridfsController < ApplicationController
 
   def serve
     file = Mongoid::GridFs.find(request.path.gsub("/uploads/grid/", ""))
+
     if file
-      content = file.data
+      content = file.data.force_encoding('UTF-8')
 
       if stale?(etag: content, last_modified: file.uploadDate.utc, public: true)
         send_data content, type: file.content_type, disposition: "inline"
